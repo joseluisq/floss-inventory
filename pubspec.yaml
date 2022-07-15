@@ -1,0 +1,9 @@
+name: floss_inventory
+version: 0.0.0
+description: List of all the projects that I'm currently maintaining and under my account (for my use).
+
+environment:
+  sdk: '>=2.17.6'
+
+dependencies:
+  intl: ^0.17.0

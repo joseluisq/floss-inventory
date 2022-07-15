@@ -1,0 +1,12 @@
+.DS_Store
+*.exe
+*.aot
+*.jit
+*.js
+*.deps
+*.map
+*.html
+public
+.dart_tool
+.packages
+pubspec.lock

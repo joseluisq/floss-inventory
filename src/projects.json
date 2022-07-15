@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Rust",
+        "repos": [
+            "joseluisq/static-web-server",
+            "static-web-server/hyper-middleware",
+            "static-web-server/archlinux-package",
+            "static-web-server/homebrew-static-web-server",
+            "joseluisq/paket",
+            "joseluisq/helipad",
+            "joseluisq/hyper-headers"
+        ]
+    },
+    {
+        "name": "Go",
+        "repos": [
+            "joseluisq/enve",
+            "joseluisq/gonetc",
+            "joseluisq/cline",
+            "joseluisq/semver-aliases"
+        ]
+    },
+    {
+        "name": "Docker",
+        "repos": [
+            "joseluisq/docker-cubesql",
+            "joseluisq/alpine-cgit",
+            "joseluisq/alpine-php-fpm",
+            "joseluisq/alpine-mysql-client",
+            "joseluisq/docker-mysql-client",
+            "joseluisq/rust-linux-darwin-builder"
+        ]
+    },
+    {
+        "name": "Ruby",
+        "repos": [
+            "joseluisq/homebrew-paket"
+        ]
+    },
+    {
+        "name": "PHP",
+        "repos": [
+            "joseluisq/ruta",
+            "joseluisq/leap",
+            "joseluisq/php-app"
+        ]
+    },
+    {
+        "name": "Fish / Bash",
+        "repos": [
+            "joseluisq/gitnow",
+            "joseluisq/fish-prompt"
+        ]
+    },
+    {
+        "name": "Javascript / Typescript",
+        "repos": [
+            "joseluisq/printd"
+        ]
+    },
+    {
+        "name": "Resources",
+        "repos": [
+            "joseluisq/macosx-sdks",
+            "joseluisq/awesome-bash-commands",
+            "joseluisq/awesome-mysql-queries-commands"
+        ]
+    }
+]
