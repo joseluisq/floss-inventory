@@ -2,22 +2,32 @@ import 'dart:collection';
 import 'dart:convert' show json;
 import 'dart:io' show File;
 
-class Project {
+class Repository {
   final String name;
-  final List<String> repos;
+  final String workflow;
 
-  Project.from(Map<String, dynamic> data)
+  Repository.from(Map<String, dynamic> data)
       : name = data['name'] as String,
-        repos = (data['repos'] as List<dynamic>)
-            .map((repo) => repo as String)
-            .toList();
+        workflow = data['workflow'] as String;
 }
 
-class Projects extends ListBase<Project> {
-  List<Project> inner = [];
+class Category {
+  final String name;
+  final List<Repository> repos;
 
-  Projects(List<dynamic> data) {
-    addAll(data.map((v) => Project.from(v as Map<String, dynamic>)).toList());
+  Category.from(Map<String, dynamic> data)
+      : name = data['name'] as String,
+        repos = (data['repos'] as List<dynamic>).map(asRepository).toList();
+
+  static Repository asRepository(dynamic repo) =>
+      Repository.from(repo as Map<String, dynamic>);
+}
+
+class Categories extends ListBase<Category> {
+  List<Category> inner = [];
+
+  Categories(List<dynamic> data) {
+    addAll(data.map((v) => Category.from(v as Map<String, dynamic>)).toList());
   }
 
   @override
@@ -29,41 +39,55 @@ class Projects extends ListBase<Project> {
   }
 
   @override
-  void operator []=(int index, Project value) {
+  void operator []=(int index, Category value) {
     inner[index] = value;
   }
 
   @override
-  Project operator [](int index) => inner[index];
+  Category operator [](int index) => inner[index];
 
   @override
-  void add(Project value) => inner.add(value);
+  void add(Category value) => inner.add(value);
 
   @override
-  void addAll(Iterable<Project> all) => inner.addAll(all);
+  void addAll(Iterable<Category> all) => inner.addAll(all);
 }
 
 class ProjectsFile {
-  List<Project> projects = [];
+  List<Category> categories = [];
 
   ProjectsFile();
 
   Future<void> fromJson(String srcPath) async {
     final jsonStr = await File(srcPath).readAsString();
     final jsonList = json.decode(jsonStr) as List<dynamic>;
-    projects = Projects(jsonList);
+    categories = Categories(jsonList);
   }
 
   Future<void> toMarkdown(String destPath) async {
     final details = StringBuffer();
 
-    for (final project in projects) {
-      details.write('## ${project.name}\n\n');
+    for (final category in categories) {
+      details.write('## ${category.name}\n\n');
 
-      if (project.repos.isNotEmpty) {
-        for (final repo in project.repos) {
-          details.write('- $repo\n');
+      if (category.repos.isEmpty) {
+        continue;
+      }
+
+      for (final repo in category.repos) {
+        final repoName = repo.name;
+        details.write('- <a href="https://github.com/$repoName">$repoName</a>');
+
+        if (repo.workflow.isNotEmpty) {
+          details
+            ..write(
+                ' — <a href="https://github.com/$repoName/actions/workflows/${repo.workflow}.yml" title="GitHub Workflow Status">')
+            ..write(
+                '<img src="https://img.shields.io/github/workflow/status/$repoName/devel" width="52" />')
+            ..write('</a>');
         }
+
+        details.write('\n');
       }
 
       details.write('\n');

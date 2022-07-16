@@ -2,68 +2,149 @@
     {
         "name": "Rust",
         "repos": [
-            "joseluisq/static-web-server",
-            "static-web-server/hyper-middleware",
-            "static-web-server/archlinux-package",
-            "static-web-server/homebrew-static-web-server",
-            "joseluisq/paket",
-            "joseluisq/helipad",
-            "joseluisq/hyper-headers"
+            {
+                "name": "joseluisq/static-web-server",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/paket",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/helipad",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/hyper-headers",
+                "workflow": ""
+            },
+            {
+                "name": "static-web-server/hyper-middleware",
+                "workflow": ""
+            }
         ]
     },
     {
         "name": "Go",
         "repos": [
-            "joseluisq/enve",
-            "joseluisq/gonetc",
-            "joseluisq/cline",
-            "joseluisq/semver-aliases"
+            {
+                "name": "joseluisq/enve",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/gonetc",
+                "workflow": "ci"
+            },
+            {
+                "name": "joseluisq/cline",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/semver-aliases",
+                "workflow": ""
+            }
         ]
     },
     {
         "name": "Docker",
         "repos": [
-            "joseluisq/docker-cubesql",
-            "joseluisq/alpine-cgit",
-            "joseluisq/alpine-php-fpm",
-            "joseluisq/alpine-mysql-client",
-            "joseluisq/docker-mysql-client",
-            "joseluisq/rust-linux-darwin-builder"
+            {
+                "name": "joseluisq/docker-cubesql",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/alpine-cgit",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/alpine-php-fpm",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/alpine-mysql-client",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/docker-mysql-client",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/rust-linux-darwin-builder",
+                "workflow": "devel"
+            }
         ]
     },
     {
         "name": "Ruby",
         "repos": [
-            "joseluisq/homebrew-paket"
+            {
+                "name": "joseluisq/homebrew-paket",
+                "workflow": ""
+            },
+            {
+                "name": "static-web-server/homebrew-static-web-server",
+                "workflow": ""
+            }
         ]
     },
     {
         "name": "PHP",
         "repos": [
-            "joseluisq/ruta",
-            "joseluisq/leap",
-            "joseluisq/php-app"
+            {
+                "name": "joseluisq/ruta",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/leap",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/php-app",
+                "workflow": ""
+            }
         ]
     },
     {
         "name": "Fish / Bash",
         "repos": [
-            "joseluisq/gitnow",
-            "joseluisq/fish-prompt"
+            {
+                "name": "joseluisq/gitnow",
+                "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/fish-prompt",
+                "workflow": ""
+            },
+            {
+                "name": "static-web-server/archlinux-package",
+                "workflow": ""
+            }
         ]
     },
     {
         "name": "Javascript / Typescript",
         "repos": [
-            "joseluisq/printd"
+            {
+                "name": "joseluisq/printd",
+                "workflow": "devel"
+            }
         ]
     },
     {
         "name": "Resources",
         "repos": [
-            "joseluisq/macosx-sdks",
-            "joseluisq/awesome-bash-commands",
-            "joseluisq/awesome-mysql-queries-commands"
+            {
+                "name": "joseluisq/macosx-sdks",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/awesome-bash-commands",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/awesome-mysql-queries-commands",
+                "workflow": ""
+            }
         ]
     }
 ]
