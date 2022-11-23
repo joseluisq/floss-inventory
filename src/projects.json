@@ -42,6 +42,14 @@
             {
                 "name": "joseluisq/semver-aliases",
                 "workflow": ""
+            },
+            {
+                "name": "joseluisq/strand",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/redel",
+                "workflow": ""
             }
         ]
     },
@@ -101,6 +109,10 @@
             {
                 "name": "joseluisq/php-app",
                 "workflow": ""
+            },
+            {
+                "name": "joseluisq/gimage",
+                "workflow": "devel"
             }
         ]
     },
@@ -127,6 +139,18 @@
             {
                 "name": "joseluisq/printd",
                 "workflow": "devel"
+            },
+            {
+                "name": "joseluisq/timelite",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/sprintfit",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/relatime",
+                "workflow": ""
             }
         ]
     },
@@ -143,6 +167,14 @@
             },
             {
                 "name": "joseluisq/awesome-mysql-queries-commands",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/json-datasets",
+                "workflow": ""
+            },
+            {
+                "name": "joseluisq/peru-geojson-datasets",
                 "workflow": ""
             }
         ]

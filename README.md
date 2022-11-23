@@ -16,6 +16,8 @@
 - <a href="https://github.com/joseluisq/gonetc">joseluisq/gonetc</a> — <a href="https://github.com/joseluisq/gonetc/actions/workflows/ci.yml" title="GitHub Workflow Status"><img src="https://img.shields.io/github/workflow/status/joseluisq/gonetc/devel" width="52" /></a>
 - <a href="https://github.com/joseluisq/cline">joseluisq/cline</a> — <a href="https://github.com/joseluisq/cline/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://img.shields.io/github/workflow/status/joseluisq/cline/devel" width="52" /></a>
 - <a href="https://github.com/joseluisq/semver-aliases">joseluisq/semver-aliases</a>
+- <a href="https://github.com/joseluisq/strand">joseluisq/strand</a>
+- <a href="https://github.com/joseluisq/redel">joseluisq/redel</a>
 
 ## Docker
 
@@ -36,6 +38,7 @@
 - <a href="https://github.com/joseluisq/ruta">joseluisq/ruta</a> — <a href="https://github.com/joseluisq/ruta/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://img.shields.io/github/workflow/status/joseluisq/ruta/devel" width="52" /></a>
 - <a href="https://github.com/joseluisq/leap">joseluisq/leap</a>
 - <a href="https://github.com/joseluisq/php-app">joseluisq/php-app</a>
+- <a href="https://github.com/joseluisq/gimage">joseluisq/gimage</a> — <a href="https://github.com/joseluisq/gimage/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://img.shields.io/github/workflow/status/joseluisq/gimage/devel" width="52" /></a>
 
 ## Fish / Bash
 
@@ -46,11 +49,16 @@
 ## Javascript / Typescript
 
 - <a href="https://github.com/joseluisq/printd">joseluisq/printd</a> — <a href="https://github.com/joseluisq/printd/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://img.shields.io/github/workflow/status/joseluisq/printd/devel" width="52" /></a>
+- <a href="https://github.com/joseluisq/timelite">joseluisq/timelite</a>
+- <a href="https://github.com/joseluisq/sprintfit">joseluisq/sprintfit</a>
+- <a href="https://github.com/joseluisq/relatime">joseluisq/relatime</a>
 
 ## Resources
 
 - <a href="https://github.com/joseluisq/macosx-sdks">joseluisq/macosx-sdks</a>
 - <a href="https://github.com/joseluisq/awesome-bash-commands">joseluisq/awesome-bash-commands</a>
 - <a href="https://github.com/joseluisq/awesome-mysql-queries-commands">joseluisq/awesome-mysql-queries-commands</a>
+- <a href="https://github.com/joseluisq/json-datasets">joseluisq/json-datasets</a>
+- <a href="https://github.com/joseluisq/peru-geojson-datasets">joseluisq/peru-geojson-datasets</a>
 
 
