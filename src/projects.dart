@@ -1,12 +1,13 @@
 import 'dart:collection';
-import 'dart:convert' show json;
 import 'dart:io' show File;
+
+import 'package:yaml/yaml.dart';
 
 class Repository {
   final String name;
   final String workflow;
 
-  Repository.from(Map<String, dynamic> data)
+  Repository.from(YamlMap data)
       : name = data['name'] as String,
         workflow = data['workflow'] as String;
 }
@@ -15,19 +16,19 @@ class Category {
   final String name;
   final List<Repository> repos;
 
-  Category.from(Map<String, dynamic> data)
+  Category.from(YamlMap data)
       : name = data['name'] as String,
         repos = (data['repos'] as List<dynamic>).map(asRepository).toList();
 
   static Repository asRepository(dynamic repo) =>
-      Repository.from(repo as Map<String, dynamic>);
+      Repository.from(repo as YamlMap);
 }
 
 class Categories extends ListBase<Category> {
   List<Category> inner = [];
 
-  Categories(List<dynamic> data) {
-    addAll(data.map((v) => Category.from(v as Map<String, dynamic>)).toList());
+  Categories(YamlList data) {
+    addAll(data.map((v) => Category.from(v as YamlMap)).toList());
   }
 
   @override
@@ -58,10 +59,10 @@ class ProjectsFile {
 
   ProjectsFile();
 
-  Future<void> fromJson(String srcPath) async {
-    final jsonStr = await File(srcPath).readAsString();
-    final jsonList = json.decode(jsonStr) as List<dynamic>;
-    categories = Categories(jsonList);
+  Future<void> fromYaml(String srcPath) async {
+    final yamlStr = await File(srcPath).readAsString();
+    final yamlList = loadYaml(yamlStr) as YamlList;
+    categories = Categories(yamlList);
   }
 
   Future<void> toMarkdown(String destPath) async {
@@ -102,6 +103,6 @@ class ProjectsFile {
 
 Future<void> main() async {
   final projects = ProjectsFile();
-  await projects.fromJson('src/projects.json');
+  await projects.fromYaml('src/projects.yml');
   await projects.toMarkdown('README.md');
 }
