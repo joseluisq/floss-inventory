@@ -1,91 +1,128 @@
 - name: Rust
   repos:
-  - name: joseluisq/static-web-server
+  - name: static-web-server/static-web-server
+    ci: github
     workflow: devel
   - name: joseluisq/paket
+    ci: github
     workflow: devel
   - name: joseluisq/helipad
+    ci: github
     workflow: devel
   - name: joseluisq/hyper-headers
+    ci: github
     workflow: ''
   - name: static-web-server/hyper-middleware
+    ci: github
     workflow: ''
 
 - name: Go
   repos:
   - name: joseluisq/enve
+    ci: github
     workflow: devel
   - name: joseluisq/gonetc
-    workflow: ci
+    ci: github
+    workflow: devel
   - name: joseluisq/cline
+    ci: github
     workflow: devel
   - name: joseluisq/semver-aliases
+    ci: github
     workflow: ''
   - name: joseluisq/strand
+    ci: github
     workflow: ''
   - name: joseluisq/redel
+    ci: github
     workflow: ''
 
 - name: Docker
   repos:
   - name: joseluisq/docker-cubesql
+    ci: github
     workflow: devel
   - name: joseluisq/alpine-cgit
+    ci: github
     workflow: devel
   - name: joseluisq/alpine-php-fpm
-    workflow: devel
+    ci: github
+    workflow: devel-8.2
   - name: joseluisq/alpine-mysql-client
+    ci: github
     workflow: devel
   - name: joseluisq/docker-mysql-client
+    ci: github
     workflow: devel
   - name: joseluisq/rust-linux-darwin-builder
+    ci: cirrus
     workflow: devel
+
 - name: Ruby
   repos:
   - name: joseluisq/homebrew-paket
+    ci: github
     workflow: ''
   - name: static-web-server/homebrew-static-web-server
+    ci: github
     workflow: ''
 
 - name: PHP
   repos:
   - name: joseluisq/ruta
-    workflow: devel
+    ci: github
+    workflow: tests
   - name: joseluisq/leap
+    ci: github
     workflow: ''
   - name: joseluisq/php-app
+    ci: github
     workflow: ''
   - name: joseluisq/gimage
+    ci: github
     workflow: devel
+
 - name: Fish / Bash
   repos:
   - name: joseluisq/gitnow
-    workflow: devel
+    ci: github
+    workflow: ci
   - name: joseluisq/fish-prompt
+    ci: github
     workflow: ''
   - name: static-web-server/archlinux-package
+    ci: github
     workflow: ''
 
 - name: Javascript / Typescript
   repos:
   - name: joseluisq/printd
-    workflow: devel
+    ci: github
+    workflow: ci
   - name: joseluisq/timelite
+    ci: github
     workflow: ''
   - name: joseluisq/sprintfit
+    ci: github
     workflow: ''
   - name: joseluisq/relatime
+    ci: github
     workflow: ''
 
 - name: Resources
   repos:
   - name: joseluisq/macosx-sdks
+    ci: github
     workflow: ''
   - name: joseluisq/awesome-bash-commands
+    ci: github
     workflow: ''
   - name: joseluisq/awesome-mysql-queries-commands
+    ci: github
     workflow: ''
   - name: joseluisq/json-datasets
+    ci: github
     workflow: ''
   - name: joseluisq/peru-geojson-datasets
+    ci: github
     workflow: ''

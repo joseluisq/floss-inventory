@@ -6,9 +6,11 @@ import 'package:yaml/yaml.dart';
 class Repository {
   final String name;
   final String workflow;
+  final String ci;
 
   Repository.from(YamlMap data)
       : name = data['name'] as String,
+        ci = data['ci'] as String,
         workflow = data['workflow'] as String;
 }
 
@@ -79,12 +81,20 @@ class ProjectsFile {
         final repoName = repo.name;
         details.write('- <a href="https://github.com/$repoName">$repoName</a>');
 
-        if (repo.workflow.isNotEmpty) {
+        if (repo.ci == 'github' && repo.workflow.isNotEmpty) {
           details
             ..write(
                 ' — <a href="https://github.com/$repoName/actions/workflows/${repo.workflow}.yml" title="GitHub Workflow Status">')
             ..write(
-                '<img src="https://img.shields.io/github/workflow/status/$repoName/devel" width="52" />')
+                '<img src="https://github.com/$repoName/actions/workflows/${repo.workflow}.yml/badge.svg?branch=master" width="54" />')
+            ..write('</a>');
+        }
+        if (repo.ci == 'cirrus' && repo.workflow.isNotEmpty) {
+          details
+            ..write(
+                ' — <a href="https://cirrus-ci.com/github/$repoName" title="Cirrus CI Status">')
+            ..write(
+                '<img src="https://api.cirrus-ci.com/github/$repoName.svg" width="54" />')
             ..write('</a>');
         }
 
