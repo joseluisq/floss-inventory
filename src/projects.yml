@@ -96,6 +96,9 @@
 
 - name: Javascript / Typescript
   repos:
+  - name: joseluisq/reactive-http
+    ci: github
+    workflow: devel
   - name: joseluisq/printd
     ci: github
     workflow: ci

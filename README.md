@@ -48,6 +48,7 @@
 
 ## Javascript / Typescript
 
+- <a href="https://github.com/joseluisq/reactive-http">joseluisq/reactive-http</a> — <a href="https://github.com/joseluisq/reactive-http/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/reactive-http/actions/workflows/devel.yml/badge.svg?branch=master" width="54" /></a>
 - <a href="https://github.com/joseluisq/printd">joseluisq/printd</a> — <a href="https://github.com/joseluisq/printd/actions/workflows/ci.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/printd/actions/workflows/ci.yml/badge.svg?branch=master" width="54" /></a>
 - <a href="https://github.com/joseluisq/timelite">joseluisq/timelite</a>
 - <a href="https://github.com/joseluisq/sprintfit">joseluisq/sprintfit</a>
