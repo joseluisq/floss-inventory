@@ -86,7 +86,7 @@ class ProjectsFile {
             ..write(
                 ' — <a href="https://github.com/$repoName/actions/workflows/${repo.workflow}.yml" title="GitHub Workflow Status">')
             ..write(
-                '<img src="https://github.com/$repoName/actions/workflows/${repo.workflow}.yml/badge.svg?branch=master" width="54" />')
+                '<img src="https://github.com/$repoName/actions/workflows/${repo.workflow}.yml/badge.svg?branch=master" width="64" />')
             ..write('</a>');
         }
         if (repo.ci == 'cirrus' && repo.workflow.isNotEmpty) {
@@ -94,7 +94,7 @@ class ProjectsFile {
             ..write(
                 ' — <a href="https://cirrus-ci.com/github/$repoName" title="Cirrus CI Status">')
             ..write(
-                '<img src="https://api.cirrus-ci.com/github/$repoName.svg" width="54" />')
+                '<img src="https://api.cirrus-ci.com/github/$repoName.svg" width="64" />')
             ..write('</a>');
         }
 

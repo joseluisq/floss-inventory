@@ -9,7 +9,7 @@
   - name: joseluisq/helipad
     ci: github
     workflow: devel
-  - name: joseluisq/hyper-headers
+  - name: static-web-serve/headers-accept-encoding
     ci: github
     workflow: ''
   - name: static-web-server/hyper-middleware
@@ -58,15 +58,6 @@
     ci: cirrus
     workflow: devel
 
-- name: Ruby
-  repos:
-  - name: joseluisq/homebrew-paket
-    ci: github
-    workflow: ''
-  - name: static-web-server/homebrew-static-web-server
-    ci: github
-    workflow: ''
-
 - name: PHP
   repos:
   - name: joseluisq/ruta
@@ -89,7 +80,7 @@
     workflow: ci
   - name: joseluisq/fish-prompt
     ci: github
-    workflow: ''
+    workflow: 'devel'
   - name: static-web-server/archlinux-package
     ci: github
     workflow: ''
@@ -109,6 +100,15 @@
     ci: github
     workflow: ''
   - name: joseluisq/relatime
+    ci: github
+    workflow: ''
+
+- name: Ruby
+  repos:
+  - name: joseluisq/homebrew-paket
+    ci: github
+    workflow: ''
+  - name: static-web-server/homebrew-static-web-server
     ci: github
     workflow: ''
 
