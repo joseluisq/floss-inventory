@@ -39,23 +39,26 @@
 
 - name: Docker
   repos:
-  - name: joseluisq/docker-cubesql
-    ci: github
-    workflow: devel
-  - name: joseluisq/alpine-cgit
-    ci: github
+  - name: joseluisq/rust-linux-darwin-builder
+    ci: cirrus
     workflow: devel
   - name: joseluisq/alpine-php-fpm
     ci: github
     workflow: devel-8.2
+  - name: joseluisq/alpine-curl
+    ci: github
+    workflow: devel
   - name: joseluisq/alpine-mysql-client
     ci: github
     workflow: devel
   - name: joseluisq/docker-mysql-client
     ci: github
     workflow: devel
-  - name: joseluisq/rust-linux-darwin-builder
-    ci: cirrus
+  - name: joseluisq/alpine-cgit
+    ci: github
+    workflow: devel
+  - name: joseluisq/docker-cubesql
+    ci: github
     workflow: devel
 
 - name: PHP

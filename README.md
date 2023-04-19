@@ -21,12 +21,13 @@
 
 ## Docker
 
-- <a href="https://github.com/joseluisq/docker-cubesql">joseluisq/docker-cubesql</a> — <a href="https://github.com/joseluisq/docker-cubesql/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/docker-cubesql/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
-- <a href="https://github.com/joseluisq/alpine-cgit">joseluisq/alpine-cgit</a> — <a href="https://github.com/joseluisq/alpine-cgit/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/alpine-cgit/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
+- <a href="https://github.com/joseluisq/rust-linux-darwin-builder">joseluisq/rust-linux-darwin-builder</a> — <a href="https://cirrus-ci.com/github/joseluisq/rust-linux-darwin-builder" title="Cirrus CI Status"><img src="https://api.cirrus-ci.com/github/joseluisq/rust-linux-darwin-builder.svg" width="64" /></a>
 - <a href="https://github.com/joseluisq/alpine-php-fpm">joseluisq/alpine-php-fpm</a> — <a href="https://github.com/joseluisq/alpine-php-fpm/actions/workflows/devel-8.2.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/alpine-php-fpm/actions/workflows/devel-8.2.yml/badge.svg?branch=master" width="64" /></a>
+- <a href="https://github.com/joseluisq/alpine-curl">joseluisq/alpine-curl</a> — <a href="https://github.com/joseluisq/alpine-curl/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/alpine-curl/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
 - <a href="https://github.com/joseluisq/alpine-mysql-client">joseluisq/alpine-mysql-client</a> — <a href="https://github.com/joseluisq/alpine-mysql-client/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/alpine-mysql-client/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
 - <a href="https://github.com/joseluisq/docker-mysql-client">joseluisq/docker-mysql-client</a> — <a href="https://github.com/joseluisq/docker-mysql-client/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/docker-mysql-client/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
-- <a href="https://github.com/joseluisq/rust-linux-darwin-builder">joseluisq/rust-linux-darwin-builder</a> — <a href="https://cirrus-ci.com/github/joseluisq/rust-linux-darwin-builder" title="Cirrus CI Status"><img src="https://api.cirrus-ci.com/github/joseluisq/rust-linux-darwin-builder.svg" width="64" /></a>
+- <a href="https://github.com/joseluisq/alpine-cgit">joseluisq/alpine-cgit</a> — <a href="https://github.com/joseluisq/alpine-cgit/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/alpine-cgit/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
+- <a href="https://github.com/joseluisq/docker-cubesql">joseluisq/docker-cubesql</a> — <a href="https://github.com/joseluisq/docker-cubesql/actions/workflows/devel.yml" title="GitHub Workflow Status"><img src="https://github.com/joseluisq/docker-cubesql/actions/workflows/devel.yml/badge.svg?branch=master" width="64" /></a>
 
 ## PHP
 
