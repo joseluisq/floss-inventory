@@ -106,6 +106,12 @@
     ci: github
     workflow: ''
 
+- name: Lua
+  repos:
+  - name: static-web-server/benchmarks
+    ci: github
+    workflow: ''
+
 - name: Ruby
   repos:
   - name: joseluisq/homebrew-paket

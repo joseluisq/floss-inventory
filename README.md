@@ -50,6 +50,10 @@
 - <a href="https://github.com/joseluisq/sprintfit">joseluisq/sprintfit</a>
 - <a href="https://github.com/joseluisq/relatime">joseluisq/relatime</a>
 
+## Lua
+
+- <a href="https://github.com/static-web-server/benchmarks">static-web-server/benchmarks</a>
+
 ## Ruby
 
 - <a href="https://github.com/joseluisq/homebrew-paket">joseluisq/homebrew-paket</a>
