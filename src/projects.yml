@@ -57,6 +57,9 @@
   - name: joseluisq/alpine-cgit
     ci: github
     workflow: devel
+  - name: joseluisq/docker-lets-encrypt
+    ci: github
+    workflow: devel
   - name: joseluisq/docker-cubesql
     ci: github
     workflow: devel
